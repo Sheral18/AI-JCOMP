@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Camera Page</h1>
+        <div class="camera-container">
+            <img id="video" src="{{ url_for('video_feed') }}" width="640" height="480">
+            <a href="{{ url_for('admin') }}">Back to Admin Page</a>
+        </div>
+    </div>
+</body>
+</html>
+
